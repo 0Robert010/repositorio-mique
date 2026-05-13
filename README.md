@@ -1,3 +1,5 @@
+HEAD
+
 # Portfólio | Miqueias Santos
 
 Portfólio profissional e responsivo criado com HTML, CSS e JavaScript puro. O projeto foi pensado para apresentar Miqueias Santos como desenvolvedor em formação, estudante de Engenharia da Computação na FACENS, com foco em projetos reais, serviços web e oportunidades profissionais.
@@ -61,3 +63,8 @@ http://127.0.0.1:4173
 2. Importe o repositório na Vercel.
 3. Use as configurações padrão para projeto estático.
 4. Publique.
+   =======
+
+# repositorio-mique
+
+Portfólio pessoal desenvolvido com HTML, CSS e JavaScript, com foco em apresentar projetos reais, habilidades técnicas, serviços de desenvolvimento web e minha evolução como estudante de Engenharia da Computação.
