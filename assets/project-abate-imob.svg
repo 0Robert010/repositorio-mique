@@ -1,0 +1,17 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="720" fill="#080A12"/>
+  <rect x="74" y="70" width="1132" height="580" rx="18" fill="#111827" stroke="#26344F"/>
+  <rect x="114" y="110" width="1052" height="70" rx="10" fill="#0D111D"/>
+  <circle cx="146" cy="145" r="9" fill="#27E8FF"/>
+  <circle cx="176" cy="145" r="9" fill="#9B5CFF"/>
+  <circle cx="206" cy="145" r="9" fill="#51FFB3"/>
+  <rect x="114" y="220" width="476" height="320" rx="12" fill="#162033"/>
+  <path d="M160 496L306 330L418 442L480 386L556 496H160Z" fill="#1E8BFF" opacity="0.35"/>
+  <rect x="632" y="232" width="410" height="34" rx="8" fill="#F7FBFF" opacity="0.9"/>
+  <rect x="632" y="290" width="500" height="18" rx="9" fill="#AEB8C8" opacity="0.5"/>
+  <rect x="632" y="326" width="452" height="18" rx="9" fill="#AEB8C8" opacity="0.32"/>
+  <rect x="632" y="390" width="144" height="48" rx="8" fill="#27E8FF"/>
+  <rect x="794" y="390" width="144" height="48" rx="8" fill="#111827" stroke="#27E8FF" opacity="0.85"/>
+  <text x="114" y="606" fill="#F7FBFF" font-family="Inter, Arial" font-size="42" font-weight="800">ABATE IMOB</text>
+  <text x="114" y="632" fill="#AEB8C8" font-family="Inter, Arial" font-size="20">Website imobiliário de alto padrão</text>
+</svg>

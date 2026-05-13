@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Miqueias Santos | Desenvolvedor Web</title>
+    <meta
+      name="description"
+      content="Portfólio profissional de Miqueias Santos, estudante de Engenharia da Computação na FACENS e desenvolvedor em formação."
+    />
+    <meta name="theme-color" content="#080a12" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#inicio">Pular para o conteúdo</a>
+
+    <header class="site-header" data-header>
+      <a class="logo" href="#inicio" aria-label="Miqueias Dev - início">
+        <span class="logo__mark">MD</span>
+        <span>Miqueias Dev</span>
+      </a>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-label="Abrir menu"
+        aria-controls="main-nav"
+        aria-expanded="false"
+        data-nav-toggle
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navegação principal" data-nav>
+        <a class="nav-link" href="#inicio">Início</a>
+        <a class="nav-link" href="#sobre">Sobre</a>
+        <a class="nav-link" href="#projetos">Projetos</a>
+        <a class="nav-link" href="#tecnologias">Tecnologias</a>
+        <a class="nav-link" href="#servicos">Serviços</a>
+        <a class="nav-link" href="#contato">Contato</a>
+      </nav>
+    </header>
+
+    <main id="conteudo">
+      <section class="hero section-observe" id="inicio" aria-labelledby="hero-title">
+        <div class="hero__content">
+          <p class="section-kicker">Portfólio profissional</p>
+          <h1 id="hero-title">Miqueias Santos</h1>
+          <p class="hero__role" aria-label="Desenvolvedor em formação | Engenharia da Computação">
+            <span data-typing>Desenvolvedor em formação | Engenharia da Computação</span>
+          </p>
+          <p class="hero__description">
+            Crio sites, interfaces modernas e soluções digitais para negócios, estudos e
+            projetos reais.
+          </p>
+
+          <div class="hero__actions" aria-label="Ações principais">
+            <a class="btn btn--primary" href="#projetos">Ver projetos</a>
+            <a class="btn btn--secondary" href="#contato">Entrar em contato</a>
+            <a class="btn btn--ghost" href="COLOCAR_LINK_GITHUB" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+
+          <div class="hero__stats" aria-label="Resumo profissional">
+            <article>
+              <strong>FACENS</strong>
+              <span>Engenharia da Computação</span>
+            </article>
+            <article>
+              <strong>4+</strong>
+              <span>Projetos em destaque</span>
+            </article>
+            <article>
+              <strong>Web</strong>
+              <span>Sites e soluções digitais</span>
+            </article>
+          </div>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <div class="code-card floating-card">
+            <div class="code-card__header">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <pre><code>const developer = {
+  name: "Miqueias Santos",
+  focus: "Web Development",
+  stack: ["HTML", "CSS", "JavaScript"],
+  status: "Building real projects"
+};</code></pre>
+          </div>
+
+          <div class="signal-card floating-card">
+            <span class="signal-card__dot"></span>
+            <div>
+              <strong>Aberto a oportunidades</strong>
+              <p>Freelance, estágio e projetos web</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-observe" id="sobre" aria-labelledby="sobre-title">
+        <div class="section-heading">
+          <p class="section-kicker">Sobre mim</p>
+          <h2 id="sobre-title">Formação técnica, prática real e vontade de construir.</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              Sou estudante de Engenharia da Computação na FACENS e desenvolvedor em
+              formação, com foco em criação de sites, interfaces modernas e soluções web
+              para negócios. Tenho experiência prática criando projetos acadêmicos,
+              comerciais e pessoais, incluindo sites institucionais, dashboards, landing
+              pages e soluções digitais para negócios reais.
+            </p>
+          </div>
+
+          <div class="about-cards" aria-label="Áreas de atuação">
+            <article class="mini-card">
+              <span>01</span>
+              <h3>Engenharia da Computação</h3>
+            </article>
+            <article class="mini-card">
+              <span>02</span>
+              <h3>Desenvolvimento Web</h3>
+            </article>
+            <article class="mini-card">
+              <span>03</span>
+              <h3>Projetos reais</h3>
+            </article>
+            <article class="mini-card">
+              <span>04</span>
+              <h3>Soluções digitais</h3>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-observe" id="projetos" aria-labelledby="projetos-title">
+        <div class="section-heading section-heading--split">
+          <div>
+            <p class="section-kicker">Projetos em destaque</p>
+            <h2 id="projetos-title">Trabalhos com foco em aplicação real.</h2>
+          </div>
+          <p>
+            Cards prontos para receber prints, links reais e novas versões conforme os
+            projetos forem evoluindo.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <img src="assets/project-abate-imob.svg" alt="Placeholder visual do projeto ABATE IMOB" />
+            <div class="project-card__body">
+              <span class="project-card__type">Site imobiliário</span>
+              <h3>ABATE IMOB</h3>
+              <p>
+                Site imobiliário de alto padrão, criado para apresentar imóveis de forma
+                profissional e facilitar contato com clientes.
+              </p>
+              <div class="tag-list" aria-label="Tecnologias usadas">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Vercel</span>
+                <span>GitHub</span>
+              </div>
+              <div class="project-card__actions">
+                <a href="COLOCAR_LINK_ABATE_IMOB" target="_blank" rel="noreferrer">Ver site</a>
+                <a href="COLOCAR_LINK_GITHUB" target="_blank" rel="noreferrer">Ver código</a>
+                <a href="#contato">Ver detalhes</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="assets/project-smartwaste.svg" alt="Placeholder visual do projeto SmartWaste" />
+            <div class="project-card__body">
+              <span class="project-card__type">Sustentabilidade</span>
+              <h3>SmartWaste</h3>
+              <p>
+                Projeto acadêmico voltado para sustentabilidade, descarte correto de
+                resíduos e conexão entre usuários e coletores.
+              </p>
+              <div class="tag-list" aria-label="Tecnologias usadas">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Vercel</span>
+              </div>
+              <div class="project-card__actions">
+                <a href="COLOCAR_LINK_SMARTWASTE" target="_blank" rel="noreferrer">Ver site</a>
+                <a href="COLOCAR_LINK_GITHUB" target="_blank" rel="noreferrer">Ver código</a>
+                <a href="#contato">Ver detalhes</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="assets/project-v7.svg" alt="Placeholder visual do projeto V7 Acessórios e Presentes" />
+            <div class="project-card__body">
+              <span class="project-card__type">Negócio próprio</span>
+              <h3>V7 Acessórios e Presentes</h3>
+              <p>
+                Soluções digitais e visuais para minha loja de acessórios, presentes e
+                produtos feitos em impressão 3D.
+              </p>
+              <div class="tag-list" aria-label="Tecnologias usadas">
+                <span>Identidade visual</span>
+                <span>WhatsApp Business</span>
+                <span>Catálogo digital</span>
+                <span>Web</span>
+              </div>
+              <div class="project-card__actions">
+                <a href="#contato">Ver detalhes</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="assets/project-interativo.svg" alt="Placeholder visual do projeto Site Interativo Personalizado" />
+            <div class="project-card__body">
+              <span class="project-card__type">Experiência criativa</span>
+              <h3>Site Interativo Personalizado</h3>
+              <p>
+                Projeto criativo com contador, músicas, animações e experiência
+                personalizada para uso pessoal.
+              </p>
+              <div class="tag-list" aria-label="Tecnologias usadas">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Animações</span>
+              </div>
+              <div class="project-card__actions">
+                <a href="#contato">Ver detalhes</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-observe" id="tecnologias" aria-labelledby="tecnologias-title">
+        <div class="section-heading">
+          <p class="section-kicker">Tecnologias</p>
+          <h2 id="tecnologias-title">Stack em evolução, com foco no essencial.</h2>
+        </div>
+
+        <div class="tech-groups">
+          <article class="tech-group">
+            <h3>Front-end</h3>
+            <div class="tech-list">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+          </article>
+
+          <article class="tech-group">
+            <h3>Ferramentas</h3>
+            <div class="tech-list">
+              <span>Git</span>
+              <span>GitHub</span>
+              <span>Vercel</span>
+              <span>Figma básico</span>
+            </div>
+          </article>
+
+          <article class="tech-group">
+            <h3>Estudando atualmente</h3>
+            <div class="tech-list">
+              <span>Python básico</span>
+              <span>C básico</span>
+              <span>Boas práticas web</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-observe" id="servicos" aria-labelledby="servicos-title">
+        <div class="section-heading">
+          <p class="section-kicker">Serviços</p>
+          <h2 id="servicos-title">O que posso desenvolver</h2>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <span>01</span>
+            <h3>Sites institucionais</h3>
+          </article>
+          <article class="service-card">
+            <span>02</span>
+            <h3>Landing pages</h3>
+          </article>
+          <article class="service-card">
+            <span>03</span>
+            <h3>Portfólios</h3>
+          </article>
+          <article class="service-card">
+            <span>04</span>
+            <h3>Sites para imobiliárias</h3>
+          </article>
+          <article class="service-card">
+            <span>05</span>
+            <h3>Catálogos digitais</h3>
+          </article>
+          <article class="service-card">
+            <span>06</span>
+            <h3>Integração com WhatsApp</h3>
+          </article>
+          <article class="service-card">
+            <span>07</span>
+            <h3>Melhorias em sites existentes</h3>
+          </article>
+          <article class="service-card">
+            <span>08</span>
+            <h3>Interfaces para projetos acadêmicos</h3>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-observe" id="experiencia" aria-labelledby="experiencia-title">
+        <div class="section-heading">
+          <p class="section-kicker">Estudos e experiência</p>
+          <h2 id="experiencia-title">Construindo repertório com estudo e prática.</h2>
+        </div>
+
+        <div class="timeline">
+          <article>
+            <span>01</span>
+            <div>
+              <h3>Engenharia da Computação — FACENS</h3>
+              <p>Formação acadêmica em andamento, com base técnica para criar soluções digitais.</p>
+            </div>
+          </article>
+          <article>
+            <span>02</span>
+            <div>
+              <h3>Projetos acadêmicos com foco em tecnologia e sustentabilidade</h3>
+              <p>Experiências que conectam desenvolvimento, pesquisa e impacto real.</p>
+            </div>
+          </article>
+          <article>
+            <span>03</span>
+            <div>
+              <h3>Desenvolvimento de sites e soluções digitais</h3>
+              <p>Criação de interfaces, páginas responsivas e experiências para negócios.</p>
+            </div>
+          </article>
+          <article>
+            <span>04</span>
+            <div>
+              <h3>Experiência prática com loja própria e presença digital</h3>
+              <p>Aplicação de design, catálogo digital, atendimento e comunicação visual na prática.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact section-observe" id="contato" aria-labelledby="contato-title">
+        <div class="contact__content">
+          <p class="section-kicker">Contato</p>
+          <h2 id="contato-title">Vamos tirar sua ideia do papel?</h2>
+          <p>
+            Entre em contato para projetos, parcerias, oportunidades ou desenvolvimento
+            de sites.
+          </p>
+
+          <div class="contact-links" aria-label="Links de contato">
+            <a href="COLOCAR_LINK_WHATSAPP" target="_blank" rel="noreferrer">WhatsApp</a>
+            <a href="mailto:COLOCAR_EMAIL">E-mail</a>
+            <a href="COLOCAR_LINK_GITHUB" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="COLOCAR_LINK_LINKEDIN" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
+
+        <form class="contact-form" novalidate data-contact-form>
+          <label for="name">Nome</label>
+          <input id="name" name="name" type="text" placeholder="Seu nome" autocomplete="name" required />
+          <small data-error-for="name"></small>
+
+          <label for="email">E-mail</label>
+          <input id="email" name="email" type="text" inputmode="email" placeholder="seu@email.com" autocomplete="email" required />
+          <small data-error-for="email"></small>
+
+          <label for="message">Mensagem</label>
+          <textarea id="message" name="message" rows="5" placeholder="Conte sobre sua ideia" required></textarea>
+          <small data-error-for="message"></small>
+
+          <button class="btn btn--primary" type="submit">Enviar mensagem</button>
+          <p class="form-success" role="status" aria-live="polite" data-form-success></p>
+        </form>
+      </section>
+    </main>
+
+    <button class="back-to-top" type="button" aria-label="Voltar ao topo" data-back-to-top>
+      ↑
+    </button>
+
+    <footer class="site-footer">
+      <p>© <span data-current-year></span> Miqueias Santos. Desenvolvido com HTML, CSS e JavaScript.</p>
+      <a href="#inicio">Voltar ao início</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

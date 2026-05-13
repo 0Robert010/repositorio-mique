@@ -1,0 +1,19 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="720" fill="#080A12"/>
+  <rect x="74" y="70" width="1132" height="580" rx="18" fill="#0D111D" stroke="#26344F"/>
+  <circle cx="1014" cy="218" r="110" fill="#51FFB3" opacity="0.16"/>
+  <circle cx="990" cy="218" r="70" fill="#51FFB3" opacity="0.22"/>
+  <path d="M952 232C974 178 1032 174 1064 206C1036 215 1012 236 998 268C984 251 970 240 952 232Z" fill="#51FFB3"/>
+  <rect x="122" y="130" width="390" height="52" rx="10" fill="#162033"/>
+  <rect x="122" y="220" width="520" height="230" rx="12" fill="#111827" stroke="#26344F"/>
+  <rect x="164" y="262" width="178" height="26" rx="8" fill="#F7FBFF" opacity="0.9"/>
+  <rect x="164" y="314" width="404" height="16" rx="8" fill="#AEB8C8" opacity="0.42"/>
+  <rect x="164" y="350" width="338" height="16" rx="8" fill="#AEB8C8" opacity="0.28"/>
+  <rect x="164" y="392" width="136" height="42" rx="8" fill="#51FFB3"/>
+  <rect x="696" y="332" width="390" height="118" rx="12" fill="#111827" stroke="#26344F"/>
+  <rect x="730" y="368" width="68" height="48" rx="8" fill="#27E8FF" opacity="0.3"/>
+  <rect x="826" y="368" width="226" height="16" rx="8" fill="#AEB8C8" opacity="0.42"/>
+  <rect x="826" y="400" width="168" height="16" rx="8" fill="#AEB8C8" opacity="0.28"/>
+  <text x="122" y="596" fill="#F7FBFF" font-family="Inter, Arial" font-size="42" font-weight="800">SmartWaste</text>
+  <text x="122" y="622" fill="#AEB8C8" font-family="Inter, Arial" font-size="20">Sustentabilidade e descarte inteligente</text>
+</svg>

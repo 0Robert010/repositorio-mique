@@ -1,0 +1,18 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="720" fill="#080A12"/>
+  <rect x="74" y="70" width="1132" height="580" rx="18" fill="#0D111D" stroke="#26344F"/>
+  <circle cx="320" cy="286" r="116" fill="#9B5CFF" opacity="0.16"/>
+  <circle cx="320" cy="286" r="72" fill="#9B5CFF" opacity="0.28"/>
+  <path d="M286 238L388 286L286 334V238Z" fill="#F7FBFF" opacity="0.92"/>
+  <rect x="552" y="178" width="454" height="80" rx="12" fill="#111827" stroke="#26344F"/>
+  <rect x="590" y="208" width="280" height="20" rx="10" fill="#AEB8C8" opacity="0.48"/>
+  <rect x="552" y="306" width="140" height="120" rx="12" fill="#162033"/>
+  <rect x="714" y="306" width="140" height="120" rx="12" fill="#162033"/>
+  <rect x="876" y="306" width="140" height="120" rx="12" fill="#162033"/>
+  <text x="588" y="378" fill="#27E8FF" font-family="Inter, Arial" font-size="34" font-weight="800">24</text>
+  <text x="750" y="378" fill="#51FFB3" font-family="Inter, Arial" font-size="34" font-weight="800">12</text>
+  <text x="912" y="378" fill="#FF5EA8" font-family="Inter, Arial" font-size="34" font-weight="800">08</text>
+  <path d="M156 496C236 456 300 536 380 496C460 456 524 536 604 496C684 456 748 536 828 496C908 456 972 536 1052 496" stroke="#27E8FF" stroke-width="8" stroke-linecap="round" opacity="0.48"/>
+  <text x="122" y="596" fill="#F7FBFF" font-family="Inter, Arial" font-size="42" font-weight="800">Site Interativo</text>
+  <text x="122" y="622" fill="#AEB8C8" font-family="Inter, Arial" font-size="20">Contador, música e animações personalizadas</text>
+</svg>

@@ -1,0 +1,20 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="720" fill="#080A12"/>
+  <rect x="74" y="70" width="1132" height="580" rx="18" fill="#111827" stroke="#26344F"/>
+  <rect x="120" y="118" width="1040" height="92" rx="12" fill="#0D111D"/>
+  <text x="156" y="176" fill="#F7FBFF" font-family="Inter, Arial" font-size="40" font-weight="800">V7 Acessórios e Presentes</text>
+  <rect x="120" y="252" width="240" height="240" rx="14" fill="#162033"/>
+  <rect x="400" y="252" width="240" height="240" rx="14" fill="#162033"/>
+  <rect x="680" y="252" width="240" height="240" rx="14" fill="#162033"/>
+  <path d="M188 386H292L314 450H166L188 386Z" fill="#9B5CFF" opacity="0.72"/>
+  <circle cx="240" cy="326" r="50" fill="#27E8FF" opacity="0.42"/>
+  <path d="M472 326H568V452H472V326Z" fill="#51FFB3" opacity="0.62"/>
+  <path d="M520 284L592 326H448L520 284Z" fill="#51FFB3" opacity="0.85"/>
+  <rect x="744" y="310" width="112" height="142" rx="18" fill="#FF5EA8" opacity="0.72"/>
+  <rect x="972" y="266" width="124" height="42" rx="8" fill="#27E8FF"/>
+  <rect x="972" y="334" width="156" height="18" rx="9" fill="#AEB8C8" opacity="0.42"/>
+  <rect x="972" y="374" width="118" height="18" rx="9" fill="#AEB8C8" opacity="0.28"/>
+  <rect x="972" y="430" width="138" height="42" rx="8" fill="#51FFB3"/>
+  <text x="120" y="596" fill="#F7FBFF" font-family="Inter, Arial" font-size="42" font-weight="800">Catálogo digital</text>
+  <text x="120" y="622" fill="#AEB8C8" font-family="Inter, Arial" font-size="20">Presença visual para negócio próprio</text>
+</svg>
