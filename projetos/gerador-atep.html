@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gerador ATEP | Projeto técnico de Miqueias Masuete</title>
+    <meta
+      name="description"
+      content="Detalhes do Gerador ATEP, projeto técnico com Flask, formulário funcional, geração de XLSX e preparação de PDF."
+    />
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body class="project-page">
+    <header class="site-header site-header--solid" data-header>
+      <a class="logo" href="../index.html#inicio" aria-label="Voltar para início">
+        <span class="logo__mark">MM</span>
+        <span>Miqueias Masuete</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-controls="main-nav" aria-expanded="false" data-nav-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="Navegação principal" data-nav>
+        <a class="nav-link" href="../index.html#sobre">Sobre</a>
+        <a class="nav-link" href="../index.html#projetos">Projetos</a>
+        <a class="nav-link" href="../index.html#servicos">Serviços</a>
+        <a class="nav-link" href="../index.html#contato">Contato</a>
+      </nav>
+    </header>
+
+    <main class="project-main">
+      <section class="project-hero">
+        <div>
+          <a class="back-link" href="../index.html#projetos">Voltar aos projetos</a>
+          <p class="section-kicker">Projeto técnico</p>
+          <h1>Gerador ATEP</h1>
+          <p>
+            Protótipo em Python e Flask que recebe dados por formulário, calcula prazos e gera
+            arquivo XLSX para download. É uma evolução importante rumo a sistemas com backend.
+          </p>
+          <div class="project-card__actions">
+            <a href="https://github.com/0Robert010/PPA/tree/app.py/PPA%20MK03" target="_blank" rel="noopener noreferrer">Ver repositório</a>
+            <a href="https://github.com/0Robert010/PPA/blob/app.py/PPA%20MK03/app.py" target="_blank" rel="noopener noreferrer">Ver código principal</a>
+            <a href="../index.html#contato">Conversar sobre formulário</a>
+          </div>
+        </div>
+        <aside class="project-summary">
+          <dl>
+            <div>
+              <dt>Status</dt>
+              <dd>Protótipo funcional</dd>
+            </div>
+            <div>
+              <dt>Período</dt>
+              <dd>2025</dd>
+            </div>
+            <div>
+              <dt>Categoria</dt>
+              <dd>Projeto técnico</dd>
+            </div>
+            <div>
+              <dt>Resultado</dt>
+              <dd>Formulário processando dados e retornando planilha para download.</dd>
+            </div>
+          </dl>
+        </aside>
+      </section>
+
+      <section class="project-detail">
+        <figure class="project-shot">
+          <img src="../assets/screenshots/gerador-atep-code.png" alt="Print real do código Flask do Gerador ATEP no GitHub" />
+          <figcaption>Print real do repositório no GitHub, mostrando o backend em Flask.</figcaption>
+        </figure>
+        <div class="detail-stack">
+          <article class="detail-card">
+            <h2>Problema</h2>
+            <p>
+              Preencher informações manualmente em documentos e planilhas pode gerar retrabalho,
+              erro de datas e dificuldade para padronizar arquivos.
+            </p>
+          </article>
+          <article class="detail-card">
+            <h2>Solução</h2>
+            <p>
+              Criei uma aplicação Flask com rota de formulário, validação básica, cálculo de data
+              e hora, geração de planilha com OpenPyXL e preparação de PDF com ReportLab.
+            </p>
+          </article>
+          <article class="detail-card">
+            <h2>O que eu fiz</h2>
+            <ul>
+              <li>Criei rotas Flask para exibir formulário e processar POST.</li>
+              <li>Usei Python para manipular datas, horários e listas de campos.</li>
+              <li>Integrei geração de XLSX e retorno do arquivo para download.</li>
+            </ul>
+          </article>
+          <article class="detail-card">
+            <h2>Tecnologias</h2>
+            <div class="tag-list">
+              <span>Python</span>
+              <span>Flask</span>
+              <span>OpenPyXL</span>
+              <span>ReportLab</span>
+              <span>HTML</span>
+              <span>Formulário funcional</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="project-more">
+        <h2>Outros projetos</h2>
+        <div class="next-projects">
+          <a href="abate-imob.html">ABATE IMOB</a>
+          <a href="smartwaste.html">SmartWaste</a>
+          <a href="dashboard-v7.html">Dashboard V7</a>
+        </div>
+      </section>
+    </main>
+
+    <button class="back-to-top" type="button" aria-label="Voltar ao topo" data-back-to-top>↑</button>
+    <script src="../script.js"></script>
+  </body>
+</html>

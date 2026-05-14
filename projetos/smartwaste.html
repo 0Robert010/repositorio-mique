@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SmartWaste | Projeto acadêmico de Miqueias Masuete</title>
+    <meta
+      name="description"
+      content="Detalhes do SmartWaste, projeto acadêmico da FACENS com dashboard web para monitoramento de lixeiras, status de coleta e dados simulados."
+    />
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body class="project-page">
+    <header class="site-header site-header--solid" data-header>
+      <a class="logo" href="../index.html#inicio" aria-label="Voltar para início">
+        <span class="logo__mark">MM</span>
+        <span>Miqueias Masuete</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-controls="main-nav" aria-expanded="false" data-nav-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="Navegação principal" data-nav>
+        <a class="nav-link" href="../index.html#sobre">Sobre</a>
+        <a class="nav-link" href="../index.html#projetos">Projetos</a>
+        <a class="nav-link" href="../index.html#servicos">Serviços</a>
+        <a class="nav-link" href="../index.html#contato">Contato</a>
+      </nav>
+    </header>
+
+    <main class="project-main">
+      <section class="project-hero">
+        <div>
+          <a class="back-link" href="../index.html#projetos">Voltar aos projetos</a>
+          <p class="section-kicker">Projeto acadêmico</p>
+          <h1>SmartWaste</h1>
+          <p>
+            Projeto UPx da FACENS para apoiar a gestão de resíduos no campus, com monitoramento
+            simulado de lixeiras, alertas e dashboard responsivo.
+          </p>
+          <div class="project-card__actions">
+            <a href="https://smart-waste-nu.vercel.app" target="_blank" rel="noopener noreferrer">Ver online</a>
+            <a href="https://github.com/0Robert010/SMART-WASTE" target="_blank" rel="noopener noreferrer">Ver repositório</a>
+            <a href="../index.html#contato">Conversar sobre projeto acadêmico</a>
+          </div>
+        </div>
+        <aside class="project-summary">
+          <dl>
+            <div>
+              <dt>Status</dt>
+              <dd>Protótipo publicado</dd>
+            </div>
+            <div>
+              <dt>Período</dt>
+              <dd>2026/1</dd>
+            </div>
+            <div>
+              <dt>Categoria</dt>
+              <dd>Projeto acadêmico</dd>
+            </div>
+            <div>
+              <dt>Resultado</dt>
+              <dd>Dashboard com pontos simulados, status por cor e documentação do projeto.</dd>
+            </div>
+          </dl>
+        </aside>
+      </section>
+
+      <section class="project-detail">
+        <figure class="project-shot">
+          <img src="../assets/screenshots/smartwaste-home.png" alt="Print real da página inicial do SmartWaste" />
+          <figcaption>Print real do SmartWaste publicado na Vercel.</figcaption>
+        </figure>
+        <div class="detail-stack">
+          <article class="detail-card">
+            <h2>Problema</h2>
+            <p>
+              A coleta de resíduos pode perder eficiência quando não existe uma visão rápida de
+              quais lixeiras estão cheias, em alerta ou dentro do limite.
+            </p>
+          </article>
+          <article class="detail-card">
+            <h2>Solução</h2>
+            <p>
+              O SmartWaste apresenta pontos de coleta, níveis de ocupação, status visual e
+              atualização simulada em JavaScript para mostrar como um sistema IoT poderia funcionar.
+            </p>
+          </article>
+          <article class="detail-card">
+            <h2>O que eu fiz</h2>
+            <ul>
+              <li>Estruturei a interface web e a apresentação do problema/solução.</li>
+              <li>Criei dashboard com cards, filtros, barras de progresso e estados visuais.</li>
+              <li>Organizei documentação e deploy para o projeto ficar demonstrável.</li>
+            </ul>
+          </article>
+          <article class="detail-card">
+            <h2>Próximos passos</h2>
+            <ul>
+              <li>Conectar sensores reais ou API.</li>
+              <li>Salvar histórico em banco de dados.</li>
+              <li>Adicionar autenticação para equipe de coleta.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="project-more">
+        <h2>Outros projetos</h2>
+        <div class="next-projects">
+          <a href="abate-imob.html">ABATE IMOB</a>
+          <a href="gerador-atep.html">Gerador ATEP</a>
+          <a href="dashboard-v7.html">Dashboard V7</a>
+        </div>
+      </section>
+    </main>
+
+    <button class="back-to-top" type="button" aria-label="Voltar ao topo" data-back-to-top>↑</button>
+    <script src="../script.js"></script>
+  </body>
+</html>

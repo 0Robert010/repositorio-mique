@@ -1,7 +1,3 @@
-/* ==========================================================================
-   Estado global e seleção de elementos
-   ========================================================================== */
-
 const header = document.querySelector('[data-header]');
 const nav = document.querySelector('[data-nav]');
 const navToggle = document.querySelector('[data-nav-toggle]');
@@ -11,30 +7,32 @@ const observedSections = document.querySelectorAll('.section-observe');
 const contactForm = document.querySelector('[data-contact-form]');
 const successMessage = document.querySelector('[data-form-success]');
 const currentYear = document.querySelector('[data-current-year]');
-const typingTarget = document.querySelector('[data-typing]');
 
-currentYear.textContent = new Date().getFullYear();
+const contact = {
+  email: 'miqueiasrobert@icloud.com',
+  whatsapp: '5515991727075',
+};
 
-/* ==========================================================================
-   Header, menu mobile e scroll suave
-   ========================================================================== */
+if (currentYear) {
+  currentYear.textContent = new Date().getFullYear();
+}
 
 function setHeaderState() {
   const isScrolled = window.scrollY > 12;
-  header.classList.toggle('is-scrolled', isScrolled);
-  backToTopButton.classList.toggle('is-visible', window.scrollY > 520);
+  header?.classList.toggle('is-scrolled', isScrolled);
+  backToTopButton?.classList.toggle('is-visible', window.scrollY > 520);
 }
 
 function closeMobileMenu() {
   document.body.classList.remove('menu-open');
-  nav.classList.remove('is-open');
-  navToggle.classList.remove('is-open');
-  navToggle.setAttribute('aria-expanded', 'false');
-  navToggle.setAttribute('aria-label', 'Abrir menu');
+  nav?.classList.remove('is-open');
+  navToggle?.classList.remove('is-open');
+  navToggle?.setAttribute('aria-expanded', 'false');
+  navToggle?.setAttribute('aria-label', 'Abrir menu');
 }
 
-navToggle.addEventListener('click', () => {
-  const isOpen = nav.classList.toggle('is-open');
+navToggle?.addEventListener('click', () => {
+  const isOpen = nav?.classList.toggle('is-open') ?? false;
   document.body.classList.toggle('menu-open', isOpen);
   navToggle.classList.toggle('is-open', isOpen);
   navToggle.setAttribute('aria-expanded', String(isOpen));
@@ -45,92 +43,69 @@ navLinks.forEach((link) => {
   link.addEventListener('click', (event) => {
     const targetId = link.getAttribute('href');
 
-    if (targetId && targetId.startsWith('#')) {
-      event.preventDefault();
-      document.querySelector(targetId)?.scrollIntoView({ behavior: 'smooth' });
-      history.pushState(null, '', targetId);
+    if (!targetId?.startsWith('#')) {
       closeMobileMenu();
+      return;
     }
+
+    const target = document.querySelector(targetId);
+    if (!target) return;
+
+    event.preventDefault();
+    target.scrollIntoView({ behavior: 'smooth' });
+    history.pushState(null, '', targetId);
+    closeMobileMenu();
   });
 });
 
-backToTopButton.addEventListener('click', () => {
+backToTopButton?.addEventListener('click', () => {
   document.querySelector('#inicio')?.scrollIntoView({ behavior: 'smooth' });
 });
 
 window.addEventListener('scroll', setHeaderState, { passive: true });
 setHeaderState();
 
-/* ==========================================================================
-   Animações ao rolar e destaque automático do menu
-   ========================================================================== */
+if ('IntersectionObserver' in window && observedSections.length > 0) {
+  const revealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.16 }
+  );
 
-const revealObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
-        revealObserver.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 0.16 }
-);
-
-observedSections.forEach((section) => revealObserver.observe(section));
+  observedSections.forEach((section) => revealObserver.observe(section));
+} else {
+  observedSections.forEach((section) => section.classList.add('is-visible'));
+}
 
 const sectionMap = Array.from(navLinks)
   .map((link) => {
     const id = link.getAttribute('href');
-    return id ? document.querySelector(id) : null;
+    return id?.startsWith('#') ? document.querySelector(id) : null;
   })
   .filter(Boolean);
 
-const activeSectionObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (!entry.isIntersecting) return;
+if ('IntersectionObserver' in window && sectionMap.length > 0) {
+  const activeSectionObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
 
-      navLinks.forEach((link) => {
-        link.classList.toggle('is-active', link.getAttribute('href') === `#${entry.target.id}`);
+        navLinks.forEach((link) => {
+          link.classList.toggle('is-active', link.getAttribute('href') === `#${entry.target.id}`);
+        });
       });
-    });
-  },
-  { rootMargin: '-42% 0px -48% 0px', threshold: 0 }
-);
+    },
+    { rootMargin: '-42% 0px -48% 0px', threshold: 0 }
+  );
 
-sectionMap.forEach((section) => activeSectionObserver.observe(section));
-
-/* ==========================================================================
-   Efeito de digitação
-   ========================================================================== */
-
-function startTypingEffect() {
-  const fullText = typingTarget.textContent.trim();
-  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-  if (prefersReducedMotion) return;
-
-  typingTarget.textContent = '';
-  let index = 0;
-
-  const typeNextCharacter = () => {
-    typingTarget.textContent = fullText.slice(0, index);
-    index += 1;
-
-    if (index <= fullText.length) {
-      window.setTimeout(typeNextCharacter, 38);
-    }
-  };
-
-  window.setTimeout(typeNextCharacter, 250);
+  sectionMap.forEach((section) => activeSectionObserver.observe(section));
 }
-
-startTypingEffect();
-
-/* ==========================================================================
-   Validação simples do formulário
-   ========================================================================== */
 
 function setFieldError(field, message) {
   const error = document.querySelector(`[data-error-for="${field.id}"]`);
@@ -145,7 +120,18 @@ function validateEmail(email) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
 
-contactForm.addEventListener('submit', (event) => {
+function buildWhatsAppMessage({ name, email, message }) {
+  const text = [
+    `Oi Miqueias, sou ${name}.`,
+    `Meu e-mail: ${email}.`,
+    '',
+    message,
+  ].join('\n');
+
+  return `https://wa.me/${contact.whatsapp}?text=${encodeURIComponent(text)}`;
+}
+
+contactForm?.addEventListener('submit', (event) => {
   event.preventDefault();
 
   const name = contactForm.elements.namedItem('name');
@@ -156,7 +142,10 @@ contactForm.addEventListener('submit', (event) => {
   setFieldError(name, '');
   setFieldError(email, '');
   setFieldError(message, '');
-  successMessage.textContent = '';
+
+  if (successMessage) {
+    successMessage.textContent = '';
+  }
 
   if (name.value.trim().length < 2) {
     setFieldError(name, 'Informe seu nome.');
@@ -169,12 +158,23 @@ contactForm.addEventListener('submit', (event) => {
   }
 
   if (message.value.trim().length < 10) {
-    setFieldError(message, 'Escreva uma mensagem com pelo menos 10 caracteres.');
+    setFieldError(message, 'Conte sua ideia com pelo menos 10 caracteres.');
     isValid = false;
   }
 
   if (!isValid) return;
 
-  successMessage.textContent = 'Mensagem validada com sucesso. Agora conecte esse formulário a um serviço de envio.';
+  const url = buildWhatsAppMessage({
+    name: name.value.trim(),
+    email: email.value.trim(),
+    message: message.value.trim(),
+  });
+
+  window.open(url, '_blank', 'noopener,noreferrer');
+
+  if (successMessage) {
+    successMessage.textContent = 'Mensagem pronta. O WhatsApp foi aberto para você confirmar o envio.';
+  }
+
   contactForm.reset();
 });

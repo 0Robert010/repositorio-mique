@@ -3,13 +3,24 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Miqueias Masuete | Desenvolvedor Full Stack</title>
+    <title>Miqueias Masuete | Desenvolvedor Web em formação</title>
     <meta
       name="description"
-      content="Portfólio profissional de Miqueias Masuete, estudante de Engenharia de Computação na FACENS e desenvolvedor full stack em formação."
+      content="Portfólio de Miqueias Masuete, desenvolvedor web em formação e estudante de Engenharia de Computação na FACENS. Projetos web, sites profissionais, SmartWaste, ABATE IMOB e soluções para negócios locais."
     />
-    <meta name="theme-color" content="#080a12" />
+    <meta name="author" content="Miqueias Masuete" />
+    <meta name="theme-color" content="#f5f8f6" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:title" content="Miqueias Masuete | Desenvolvedor Web em formação" />
+    <meta
+      property="og:description"
+      content="Crio sites modernos para negócios, projetos acadêmicos e portfólios profissionais."
+    />
+    <meta property="og:url" content="https://repositorio-mique.vercel.app" />
+    <meta property="og:image" content="https://repositorio-mique.vercel.app/assets/screenshots/portfolio-home.png" />
 
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,12 +31,12 @@
   </head>
 
   <body>
-    <a class="skip-link" href="#inicio">Pular para o conteúdo</a>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
     <header class="site-header" data-header>
-      <a class="logo" href="#inicio" aria-label="Miqueias Dev - início">
-        <span class="logo__mark">MD</span>
-        <span>Miqueias Dev</span>
+      <a class="logo" href="#inicio" aria-label="Miqueias Masuete - início">
+        <span class="logo__mark">MM</span>
+        <span>Miqueias Masuete</span>
       </a>
 
       <button
@@ -54,25 +65,18 @@
     <main id="conteudo">
       <section class="hero section-observe" id="inicio" aria-labelledby="hero-title">
         <div class="hero__content">
-          <p class="section-kicker">Full stack em formação</p>
-          <h1 id="hero-title">Miqueias Masuete</h1>
-          <p class="hero__role" aria-label="Desenvolvedor Full Stack">
-            <span data-typing>Desenvolvedor Full Stack</span>
-          </p>
+          <p class="availability">Aberto a freelance e estágio</p>
+          <p class="section-kicker">Desenvolvedor Web em formação | Engenharia de Computação</p>
+          <h1 id="hero-title">Crio sites modernos para negócios e projetos profissionais.</h1>
           <p class="hero__description">
-            Crio soluções digitais, interfaces modernas e projetos funcionais unindo
-            desenvolvimento web, visão de negócio e tecnologia aplicada.
-          </p>
-          <p class="hero__subtitle">
-            Atuo com projetos web, propostas comerciais, soluções acadêmicas e aplicações
-            práticas envolvendo programação, impressão 3D e presença digital.
+            Transformo ideias em páginas funcionais, bonitas e publicáveis, incluindo portfólios,
+            projetos acadêmicos, catálogos e sites para pequenos negócios.
           </p>
 
           <div class="hero__actions" aria-label="Ações principais">
-            <a class="btn btn--primary" href="#projetos">Ver projetos</a>
-            <a class="btn btn--secondary" href="#contato">Entrar em contato</a>
-            <!-- Troque este link pelo seu perfil real do GitHub. -->
-            <a class="btn btn--ghost" href="COLOCAR_LINK_GITHUB" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="btn btn--primary" href="#projetos">Ver projetos recentes</a>
+            <a class="btn btn--secondary" href="https://wa.me/5515991727075?text=Oi%20Miqueias%2C%20quero%20conversar%20sobre%20um%20projeto%20web." target="_blank" rel="noopener noreferrer">Conversar no WhatsApp</a>
+            <a class="btn btn--ghost" href="assets/curriculo-miqueias-masuete.pdf" download>Baixar currículo</a>
           </div>
 
           <div class="hero__stats" aria-label="Resumo profissional">
@@ -81,223 +85,307 @@
               <span>Engenharia de Computação</span>
             </article>
             <article>
-              <strong>Full Stack</strong>
-              <span>Front-end, back-end e dados</span>
+              <strong>Web + negócio</strong>
+              <span>Sites para presença digital e vendas</span>
             </article>
             <article>
-              <strong>3D + Web</strong>
-              <span>Loja, impressão 3D e presença digital</span>
+              <strong>Sorocaba/SP</strong>
+              <span>Projetos remotos, híbridos e presenciais</span>
             </article>
           </div>
         </div>
 
-        <div class="hero__visual" aria-hidden="true">
-          <div class="code-card floating-card">
-            <div class="code-card__header">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <pre><code>const miqueias = {
-  role: "Full Stack Developer",
-  college: "FACENS",
-  interests: ["Back-end", "Hardware", "3D Print"],
-  goal: "Build useful systems"
-};</code></pre>
+        <aside class="hero__profile" aria-label="Resumo visual de Miqueias Masuete">
+          <img
+            src="https://avatars.githubusercontent.com/u/118195067?v=4"
+            alt="Avatar profissional de Miqueias Masuete no GitHub"
+            width="180"
+            height="180"
+          />
+          <div>
+            <p class="profile-label">Posicionamento</p>
+            <h2>Ideia no papel, site no ar.</h2>
+            <p>
+              Desenvolvo páginas claras, responsivas e publicadas com GitHub e Vercel, pensando
+              na apresentação do negócio e na experiência de quem vai usar.
+            </p>
           </div>
-
-          <div class="signal-card floating-card">
-            <span class="signal-card__dot"></span>
-            <div>
-              <strong>Aberto a oportunidades</strong>
-              <p>Projetos web, freelance, estágio e propostas comerciais</p>
-            </div>
+          <div class="profile-proof">
+            <span>GitHub ativo</span>
+            <span>Projetos publicados</span>
+            <span>Loja + impressão 3D</span>
           </div>
-        </div>
+        </aside>
       </section>
 
       <section class="section section-observe" id="sobre" aria-labelledby="sobre-title">
-        <div class="section-heading">
-          <p class="section-kicker">Sobre mim</p>
-          <h2 id="sobre-title">Tech, negócio e prática real no mesmo caminho.</h2>
-        </div>
-
-        <div class="about-grid">
-          <div class="about-text">
-            <p>
-              Sou Miqueias Masuete, estudante de Engenharia de Computação na FACENS e
-              desenvolvedor full stack em formação.
-            </p>
-            <p>
-              Tenho interesse por back-end, hardware, impressão 3D e desenvolvimento de
-              soluções digitais aplicadas a problemas reais. Atualmente estou aprofundando
-              meus estudos em programação estruturada, front-end e banco de dados, buscando
-              construir uma base sólida para desenvolver sistemas completos, funcionais e
-              bem organizados.
-            </p>
-            <p>
-              Além da área acadêmica, também tenho experiência prática administrando uma
-              loja, trabalhando com impressão 3D e criando soluções digitais para projetos
-              próprios, acadêmicos e propostas comerciais.
-            </p>
+        <div class="section-heading section-heading--split">
+          <div>
+            <p class="section-kicker">Sobre mim</p>
+            <h2 id="sobre-title">Estudo tecnologia com foco em aplicação real.</h2>
           </div>
-
-          <div class="about-cards" aria-label="Áreas de atuação">
-            <article class="mini-card">
-              <span>01</span>
-              <h3>Engenharia de Computação</h3>
-            </article>
-            <article class="mini-card">
-              <span>02</span>
-              <h3>Desenvolvimento Full Stack</h3>
-            </article>
-            <article class="mini-card">
-              <span>03</span>
-              <h3>Back-end, dados e lógica</h3>
-            </article>
-            <article class="mini-card">
-              <span>04</span>
-              <h3>Impressão 3D e negócio</h3>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section-observe" id="formacao" aria-labelledby="formacao-title">
-        <div class="section-heading">
-          <p class="section-kicker">Formação e experiência</p>
-          <h2 id="formacao-title">Base acadêmica com aplicação prática.</h2>
+          <p>
+            Meu objetivo profissional é evoluir como desenvolvedor web/full stack, atuar em
+            estágio, freelas e projetos para pequenos negócios, sempre com entrega publicada,
+            organizada e fácil de entender.
+          </p>
         </div>
 
-        <div class="profile-grid">
-          <article class="info-panel">
-            <span class="panel-label">Área de estudo</span>
-            <h3>Engenharia de Computação — FACENS</h3>
+        <div class="about-layout">
+          <article class="about-panel">
+            <h3>Atualmente</h3>
+            <ul class="check-list">
+              <li>Curso Engenharia de Computação na FACENS.</li>
+              <li>Foco em front-end, lógica, banco de dados e fundamentos de back-end.</li>
+              <li>Crio sites responsivos em HTML, CSS e JavaScript com deploy na Vercel.</li>
+              <li>Uso GitHub para versionar, documentar e apresentar evolução técnica.</li>
+            </ul>
+          </article>
+
+          <article class="about-panel about-panel--accent">
+            <h3>Experiência prática</h3>
             <p>
-              Curso voltado ao desenvolvimento de software, fundamentos de computação,
-              hardware, lógica, sistemas e soluções tecnológicas. Atualmente, meus estudos
-              estão focados em programação estruturada, desenvolvimento web, back-end,
-              banco de dados e fundamentos técnicos para criação de sistemas completos.
+              Minha rotina com loja, atendimento, organização de produtos e impressão 3D me dá
+              visão de cliente. Isso ajuda a criar páginas que não ficam só bonitas: elas precisam
+              explicar, vender, orientar e facilitar contato.
             </p>
           </article>
 
-          <article class="info-panel info-panel--accent">
-            <span class="panel-label">Experiência prática</span>
-            <h3>Administrador de loja, operador de impressão 3D e desenvolvedor em formação</h3>
-            <p>
-              Atuo na administração de uma loja física, lidando com atendimento, vendas,
-              organização de produtos, presença digital e criação de soluções para o
-              negócio. Também trabalho com impressão 3D, desde a preparação dos modelos
-              até a produção de peças personalizadas.
-            </p>
-            <p>
-              Essa experiência me ajuda a unir tecnologia, criatividade e visão prática de
-              negócio, criando soluções que não ficam apenas no código, mas podem ser
-              aplicadas em situações reais.
-            </p>
-          </article>
+          <div class="timeline" aria-label="Linha do tempo">
+            <article>
+              <span>2024</span>
+              <p>Base em tecnologia, lógica e organização de estudos.</p>
+            </article>
+            <article>
+              <span>2025</span>
+              <p>Primeiros projetos web, Flask e automações simples com arquivos.</p>
+            </article>
+            <article>
+              <span>2026</span>
+              <p>Portfólio profissional, SmartWaste, sites publicados e freelas.</p>
+            </article>
+          </div>
         </div>
       </section>
 
       <section class="section section-observe" id="projetos" aria-labelledby="projetos-title">
         <div class="section-heading section-heading--split">
           <div>
-            <p class="section-kicker">Projetos em destaque</p>
-            <h2 id="projetos-title">Projetos acadêmicos, comerciais e aplicados.</h2>
+            <p class="section-kicker">Projetos recentes</p>
+            <h2 id="projetos-title">A parte mais importante do portfólio.</h2>
           </div>
           <p>
-            Seleção de trabalhos que mostram evolução técnica, organização visual e
-            aplicação prática em contextos reais.
+            Projetos separados por tipo, com status, período, objetivo, tecnologias, links reais
+            e páginas individuais de detalhe.
           </p>
         </div>
 
-        <div class="projects-grid">
+        <div class="projects-grid projects-grid--featured">
           <article class="project-card">
-            <!-- Para usar um print real, troque o caminho abaixo por uma imagem dentro de assets/. -->
-            <img src="assets/project-smartwaste.svg" alt="Visual abstrato do projeto SmartWaste" />
+            <a class="project-card__media" href="projetos/abate-imob.html" aria-label="Ver detalhes do projeto ABATE IMOB">
+              <img src="assets/screenshots/abate-imob-home.png" alt="Print real da página inicial do site ABATE IMOB" loading="lazy" />
+            </a>
             <div class="project-card__body">
-              <span class="project-card__type">Projeto acadêmico</span>
-              <h3>SmartWaste</h3>
-              <p>
-                Projeto acadêmico desenvolvido com foco em sustentabilidade e tecnologia.
-                A proposta é utilizar soluções digitais para apoiar a gestão de resíduos,
-                descarte correto e conexão entre usuários, coletores e pontos de coleta.
-              </p>
-              <p>
-                No projeto, participei da construção da interface e da estrutura web,
-                aplicando conceitos de desenvolvimento front-end, organização de conteúdo e
-                apresentação de solução tecnológica para um problema real.
-              </p>
-              <div class="tag-list" aria-label="Tecnologias usadas">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>Sustentabilidade</span>
-                <span>Projeto acadêmico</span>
+              <div class="project-meta">
+                <span class="project-card__type project-card__type--commercial">Projeto comercial</span>
+                <span class="status status--done">Finalizado</span>
               </div>
-              <div class="project-card__actions">
-                <a href="COLOCAR_LINK_SMARTWASTE" target="_blank" rel="noreferrer">Ver site</a>
-                <a href="COLOCAR_LINK_GITHUB" target="_blank" rel="noreferrer">Ver código</a>
-                <a href="#contato">Ver detalhes</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <img src="assets/project-abate-imob.svg" alt="Visual abstrato do projeto ABATE IMOB" />
-            <div class="project-card__body">
-              <span class="project-card__type">Proposta comercial</span>
               <h3>ABATE IMOB</h3>
               <p>
-                Proposta de site imobiliário de alto padrão, criada para apresentar imóveis
-                de forma profissional, melhorar a presença digital da marca e facilitar o
-                contato com possíveis clientes.
+                Site imobiliário premium para apresentar imóveis, fortalecer presença digital e
+                facilitar contato com clientes por uma comunicação mais elegante e confiável.
               </p>
-              <p>
-                O projeto foi desenvolvido como uma proposta comercial/teste, com foco em
-                layout moderno, experiência do usuário, responsividade e comunicação visual
-                voltada ao mercado imobiliário.
-              </p>
-              <div class="tag-list" aria-label="Tecnologias usadas">
+              <dl class="project-facts">
+                <div>
+                  <dt>Período</dt>
+                  <dd>2026</dd>
+                </div>
+                <div>
+                  <dt>Resultado</dt>
+                  <dd>Site online com identidade, seções comerciais e navegação responsiva.</dd>
+                </div>
+              </dl>
+              <div class="tag-list" aria-label="Tecnologias usadas no ABATE IMOB">
                 <span>HTML</span>
                 <span>CSS</span>
                 <span>JavaScript</span>
                 <span>Vercel</span>
-                <span>Site institucional</span>
+                <span>Responsivo</span>
               </div>
               <div class="project-card__actions">
-                <a href="COLOCAR_LINK_ABATE_IMOB" target="_blank" rel="noreferrer">Ver site</a>
-                <a href="COLOCAR_LINK_GITHUB" target="_blank" rel="noreferrer">Ver código</a>
-                <a href="#contato">Ver detalhes</a>
+                <a href="https://abate-imob.vercel.app" target="_blank" rel="noopener noreferrer">Ver online</a>
+                <span class="link-disabled" aria-disabled="true">Repositório privado</span>
+                <a href="projetos/abate-imob.html">Detalhes do projeto</a>
               </div>
             </div>
           </article>
 
-          <article class="project-card project-card--wide">
-            <img src="assets/project-v7.svg" alt="Visual abstrato do projeto V7 Acessórios e Presentes" />
+          <article class="project-card">
+            <a class="project-card__media" href="projetos/smartwaste.html" aria-label="Ver detalhes do projeto SmartWaste">
+              <img src="assets/screenshots/smartwaste-home.png" alt="Print real da página inicial do projeto SmartWaste" loading="lazy" />
+            </a>
             <div class="project-card__body">
-              <span class="project-card__type">Negócio próprio</span>
-              <h3>V7 Acessórios e Presentes</h3>
+              <div class="project-meta">
+                <span class="project-card__type project-card__type--academic">Projeto acadêmico</span>
+                <span class="status status--prototype">Protótipo publicado</span>
+              </div>
+              <h3>SmartWaste</h3>
               <p>
-                Projeto ligado à minha experiência prática com loja, produtos físicos,
-                impressão 3D e presença digital. Envolve organização de produtos, criação
-                de materiais, atendimento, comunicação visual e ideias para catálogo e
-                divulgação online.
+                Sistema web acadêmico para monitorar lixeiras no campus da FACENS, priorizar
+                coletas e apresentar dados em dashboard responsivo.
               </p>
-              <p>
-                Esse projeto representa a união entre tecnologia, negócio próprio e soluções
-                digitais aplicadas ao comércio.
-              </p>
-              <div class="tag-list" aria-label="Tecnologias usadas">
-                <span>Negócio próprio</span>
-                <span>Impressão 3D</span>
-                <span>Presença digital</span>
-                <span>Atendimento</span>
-                <span>Produtos</span>
+              <dl class="project-facts">
+                <div>
+                  <dt>Período</dt>
+                  <dd>2026/1</dd>
+                </div>
+                <div>
+                  <dt>Resultado</dt>
+                  <dd>Landing page, dashboard simulado, alertas e documentação do projeto UPx.</dd>
+                </div>
+              </dl>
+              <div class="tag-list" aria-label="Tecnologias usadas no SmartWaste">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Dashboard</span>
+                <span>IoT simulado</span>
               </div>
               <div class="project-card__actions">
-                <a href="#contato">Ver detalhes</a>
+                <a href="https://smart-waste-nu.vercel.app" target="_blank" rel="noopener noreferrer">Ver online</a>
+                <a href="https://github.com/0Robert010/SMART-WASTE" target="_blank" rel="noopener noreferrer">Ver repositório</a>
+                <a href="projetos/smartwaste.html">Detalhes do projeto</a>
               </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <a class="project-card__media" href="projetos/gerador-atep.html" aria-label="Ver detalhes do projeto Gerador ATEP">
+              <img src="assets/screenshots/gerador-atep-code.png" alt="Print real do código Python e Flask do Gerador ATEP no GitHub" loading="lazy" />
+            </a>
+            <div class="project-card__body">
+              <div class="project-meta">
+                <span class="project-card__type project-card__type--technical">Projeto técnico</span>
+                <span class="status status--prototype">Protótipo funcional</span>
+              </div>
+              <h3>Gerador ATEP</h3>
+              <p>
+                Aplicação Flask com formulário, leitura de dados, geração de planilha XLSX e
+                preparação de PDF. É o projeto mais técnico do portfólio até agora.
+              </p>
+              <dl class="project-facts">
+                <div>
+                  <dt>Período</dt>
+                  <dd>2025</dd>
+                </div>
+                <div>
+                  <dt>Resultado</dt>
+                  <dd>Fluxo de formulário que processa informações e entrega arquivo para download.</dd>
+                </div>
+              </dl>
+              <div class="tag-list" aria-label="Tecnologias usadas no Gerador ATEP">
+                <span>Python</span>
+                <span>Flask</span>
+                <span>OpenPyXL</span>
+                <span>ReportLab</span>
+                <span>Formulário</span>
+              </div>
+              <div class="project-card__actions">
+                <a href="https://github.com/0Robert010/PPA/tree/app.py/PPA%20MK03" target="_blank" rel="noopener noreferrer">Ver repositório</a>
+                <a href="projetos/gerador-atep.html">Detalhes do projeto</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <a class="project-card__media" href="projetos/portfolio.html" aria-label="Ver detalhes do projeto Portfólio">
+              <img src="assets/screenshots/portfolio-github.png" alt="Print real do repositório do portfólio no GitHub" loading="lazy" />
+            </a>
+            <div class="project-card__body">
+              <div class="project-meta">
+                <span class="project-card__type project-card__type--own">Projeto próprio</span>
+                <span class="status status--progress">Em evolução</span>
+              </div>
+              <h3>Portfólio profissional</h3>
+              <p>
+                Site pessoal usado para apresentar projetos, serviços, tecnologias, disponibilidade
+                e evolução como desenvolvedor web.
+              </p>
+              <dl class="project-facts">
+                <div>
+                  <dt>Período</dt>
+                  <dd>2026</dd>
+                </div>
+                <div>
+                  <dt>Resultado</dt>
+                  <dd>Portfólio publicado, com SEO, páginas de projetos e contato funcional.</dd>
+                </div>
+              </dl>
+              <div class="tag-list" aria-label="Tecnologias usadas no portfólio">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>SEO</span>
+                <span>GitHub</span>
+              </div>
+              <div class="project-card__actions">
+                <a href="https://repositorio-mique.vercel.app" target="_blank" rel="noopener noreferrer">Ver online</a>
+                <a href="https://github.com/0Robert010/repositorio-mique" target="_blank" rel="noopener noreferrer">Ver repositório</a>
+                <a href="projetos/portfolio.html">Detalhes do projeto</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-observe section-compact" id="andamento" aria-labelledby="andamento-title">
+        <div class="section-heading section-heading--split">
+          <div>
+            <p class="section-kicker">Projetos em andamento</p>
+            <h2 id="andamento-title">Próximos passos com loja, dashboard e dados.</h2>
+          </div>
+          <p>
+            Estes projetos deixam claro para onde a evolução técnica está indo: catálogo,
+            formulário real, login, dashboard e banco de dados.
+          </p>
+        </div>
+
+        <div class="ongoing-grid">
+          <article class="ongoing-card">
+            <span class="project-card__type project-card__type--own">Negócio próprio</span>
+            <h3>V7 Acessórios e Presentes</h3>
+            <p>
+              Evolução da loja para um catálogo online com produtos, chamada para WhatsApp e
+              organização visual pensada para pequenos negócios.
+            </p>
+            <div class="tag-list">
+              <span>Catálogo</span>
+              <span>WhatsApp</span>
+              <span>Impressão 3D</span>
+              <span>Em desenvolvimento</span>
+            </div>
+            <div class="project-card__actions">
+              <a href="projetos/v7.html">Detalhes do projeto</a>
+              <a href="#contato">Quero um catálogo</a>
+            </div>
+          </article>
+
+          <article class="ongoing-card">
+            <span class="project-card__type project-card__type--technical">Protótipo técnico</span>
+            <h3>Dashboard V7</h3>
+            <p>
+              Próximo projeto técnico: painel simples para visualizar produtos, vendas e estoque,
+              com futuro login e banco de dados SQLite ou MySQL.
+            </p>
+            <div class="tag-list">
+              <span>Dashboard</span>
+              <span>Login futuro</span>
+              <span>Banco de dados</span>
+              <span>API futura</span>
+            </div>
+            <div class="project-card__actions">
+              <a href="projetos/dashboard-v7.html">Detalhes do projeto</a>
+              <a href="#tecnologias">Ver evolução técnica</a>
             </div>
           </article>
         </div>
@@ -306,196 +394,224 @@
       <section class="section section-observe" id="tecnologias" aria-labelledby="tecnologias-title">
         <div class="section-heading">
           <p class="section-kicker">Tecnologias</p>
-          <h2 id="tecnologias-title">Stack em construção, com foco em sistemas completos.</h2>
+          <h2 id="tecnologias-title">Tecnologias que utilizo e estou evoluindo.</h2>
         </div>
 
         <div class="tech-groups">
-          <article class="tech-group">
-            <h3>Front-end</h3>
-            <div class="tech-list tech-list--levels">
-              <span>HTML <strong>Intermediário</strong></span>
-              <span>CSS <strong>Intermediário</strong></span>
-              <span>JavaScript <strong>Básico/Intermediário</strong></span>
+          <article class="tech-group tech-group--current">
+            <span class="tech-icon">WEB</span>
+            <h3>Uso atualmente</h3>
+            <p>Base usada nos projetos publicados e nas páginas comerciais.</p>
+            <div class="tech-list">
+              <span>HTML semântico</span>
+              <span>CSS responsivo</span>
+              <span>JavaScript</span>
+              <span>Git</span>
+              <span>GitHub</span>
+              <span>Vercel</span>
             </div>
           </article>
 
           <article class="tech-group">
-            <h3>Back-end e banco de dados</h3>
-            <div class="tech-list tech-list--levels">
-              <span>Lógica de programação <strong>Em desenvolvimento</strong></span>
-              <span>Programação estruturada <strong>Estudando</strong></span>
-              <span>Banco de dados <strong>Estudando</strong></span>
+            <span class="tech-icon">APP</span>
+            <h3>Aplicação em projetos</h3>
+            <p>Recursos que já aparecem em SmartWaste, ABATE IMOB e neste portfólio.</p>
+            <div class="tech-list">
+              <span>Deploy online</span>
+              <span>SEO básico</span>
+              <span>Formulário com validação</span>
+              <span>Dashboard simulado</span>
+              <span>UX responsiva</span>
             </div>
           </article>
 
           <article class="tech-group">
-            <h3>Ferramentas</h3>
-            <div class="tech-list tech-list--levels">
-              <span>Git <strong>Básico/Intermediário</strong></span>
-              <span>GitHub <strong>Básico/Intermediário</strong></span>
-              <span>Vercel <strong>Básico</strong></span>
-              <span>VS Code <strong>Intermediário</strong></span>
+            <span class="tech-icon">DEV</span>
+            <h3>Estudando agora</h3>
+            <p>Próximo foco para transformar páginas em sistemas mais completos.</p>
+            <div class="tech-list">
+              <span>C</span>
+              <span>Python</span>
+              <span>Flask</span>
+              <span>SQLite</span>
+              <span>MySQL</span>
+              <span>APIs</span>
             </div>
           </article>
 
           <article class="tech-group">
-            <h3>Outras áreas</h3>
-            <div class="tech-list tech-list--levels">
-              <span>Impressão 3D <strong>Intermediário</strong></span>
-              <span>Hardware <strong>Interesse/estudo</strong></span>
-              <span>Figma/Canva <strong>Básico</strong></span>
+            <span class="tech-icon">3D</span>
+            <h3>Diferencial prático</h3>
+            <p>Experiência fora da tela que melhora a visão de produto e cliente.</p>
+            <div class="tech-list">
+              <span>Impressão 3D</span>
+              <span>Prototipagem</span>
+              <span>Atendimento</span>
+              <span>Organização de loja</span>
+              <span>Visão comercial</span>
             </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="section section-observe" id="diferenciais" aria-labelledby="diferenciais-title">
-        <div class="section-heading section-heading--split">
-          <div>
-            <p class="section-kicker">Diferenciais</p>
-            <h2 id="diferenciais-title">Por que trabalhar comigo?</h2>
-          </div>
-          <p>
-            Tenho uma visão prática que une tecnologia, negócio e criação. Além de estudar
-            Engenharia de Computação, também administro uma loja e trabalho com impressão
-            3D, o que me ajuda a entender melhor problemas reais, atendimento ao cliente,
-            apresentação de produtos e soluções digitais aplicadas no dia a dia.
-          </p>
-        </div>
-
-        <article class="why-card">
-          <p>
-            Meu objetivo é criar projetos funcionais, organizados e com boa apresentação,
-            sempre buscando evoluir tecnicamente e entregar soluções cada vez mais completas.
-          </p>
-        </article>
-
-        <div class="differentials-grid">
-          <article>
-            <span>01</span>
-            <p>Visão prática de negócio por administrar uma loja</p>
-          </article>
-          <article>
-            <span>02</span>
-            <p>Experiência com atendimento e comunicação com clientes</p>
-          </article>
-          <article>
-            <span>03</span>
-            <p>Conhecimento em impressão 3D e criação de produtos físicos</p>
-          </article>
-          <article>
-            <span>04</span>
-            <p>Interesse em back-end, hardware e sistemas completos</p>
-          </article>
-          <article>
-            <span>05</span>
-            <p>Facilidade em transformar ideias em projetos visuais e funcionais</p>
-          </article>
-          <article>
-            <span>06</span>
-            <p>Experiência com projetos acadêmicos e propostas comerciais</p>
-          </article>
-          <article>
-            <span>07</span>
-            <p>Aprendizado constante em desenvolvimento web e banco de dados</p>
           </article>
         </div>
       </section>
 
       <section class="section section-observe" id="servicos" aria-labelledby="servicos-title">
-        <div class="section-heading">
-          <p class="section-kicker">Serviços</p>
-          <h2 id="servicos-title">O que posso desenvolver</h2>
+        <div class="section-heading section-heading--split">
+          <div>
+            <p class="section-kicker">Serviços</p>
+            <h2 id="servicos-title">Precisa de um site simples, bonito e publicável?</h2>
+          </div>
+          <p>
+            Trabalho com pequenos negócios, projetos acadêmicos e profissionais que precisam
+            apresentar uma ideia com clareza.
+          </p>
         </div>
 
         <div class="services-grid">
+          <article class="service-card service-card--featured">
+            <span>Principal</span>
+            <h3>Site profissional para sua empresa</h3>
+            <p>Presença digital com seções claras, botão para WhatsApp e publicação na Vercel.</p>
+          </article>
           <article class="service-card">
+            <span>Catálogo</span>
+            <h3>Catálogo online para loja local</h3>
+            <p>Produtos organizados, filtros simples e chamada direta para atendimento.</p>
+          </article>
+          <article class="service-card">
+            <span>Captação</span>
+            <h3>Landing page para captar clientes</h3>
+            <p>Página direta para divulgar serviço, campanha, imóvel ou produto.</p>
+          </article>
+          <article class="service-card">
+            <span>Acadêmico</span>
+            <h3>Página para TCC ou projeto</h3>
+            <p>Apresentação de problema, solução, tecnologias, equipe e resultados.</p>
+          </article>
+          <article class="service-card">
+            <span>Imobiliária</span>
+            <h3>Site para imobiliária</h3>
+            <p>Vitrine de imóveis, contato rápido e identidade visual profissional.</p>
+          </article>
+          <article class="service-card">
+            <span>Manutenção</span>
+            <h3>Ajustes em sites existentes</h3>
+            <p>Correção visual, responsividade, textos, links, SEO e publicação.</p>
+          </article>
+        </div>
+
+        <div class="section-cta">
+          <p>Quer transformar uma ideia em página publicada?</p>
+          <a class="btn btn--primary" href="https://wa.me/5515991727075?text=Oi%20Miqueias%2C%20quero%20solicitar%20um%20or%C3%A7amento%20para%20site." target="_blank" rel="noopener noreferrer">Solicitar orçamento</a>
+        </div>
+      </section>
+
+      <section class="section section-observe" id="diferenciais" aria-labelledby="diferenciais-title">
+        <div class="section-heading">
+          <p class="section-kicker">Meu diferencial</p>
+          <h2 id="diferenciais-title">Desenvolvimento com visão de quem também atende cliente.</h2>
+        </div>
+
+        <div class="differentials-grid">
+          <article>
             <span>01</span>
-            <h3>Sites institucionais</h3>
-            <p>Páginas profissionais para apresentar empresas, serviços e marcas.</p>
+            <h3>Loja física</h3>
+            <p>Entendo atendimento, organização de produto, dúvida de cliente e decisão de compra.</p>
           </article>
-          <article class="service-card">
+          <article>
             <span>02</span>
-            <h3>Landing pages</h3>
-            <p>Páginas focadas em divulgação, conversão e captação de clientes.</p>
+            <h3>Impressão 3D</h3>
+            <p>Trabalho com prototipagem e criação, o que ajuda a pensar em solução além da tela.</p>
           </article>
-          <article class="service-card">
+          <article>
             <span>03</span>
-            <h3>Portfólios</h3>
-            <p>Sites pessoais para apresentar projetos, habilidades e experiências.</p>
+            <h3>Projetos publicados</h3>
+            <p>Uso GitHub e Vercel para deixar projetos acessíveis, testáveis e documentados.</p>
           </article>
-          <article class="service-card">
+          <article>
             <span>04</span>
-            <h3>Sites para imobiliárias</h3>
-            <p>Páginas modernas para exibir imóveis e facilitar o contato com clientes.</p>
+            <h3>Leitura comercial</h3>
+            <p>Crio páginas pensando em clareza, confiança, conversão e apresentação profissional.</p>
           </article>
-          <article class="service-card">
-            <span>05</span>
-            <h3>Catálogos digitais</h3>
-            <p>Apresentação online de produtos, serviços ou coleções.</p>
-          </article>
-          <article class="service-card">
-            <span>06</span>
-            <h3>Integração com WhatsApp</h3>
-            <p>Botões e chamadas diretas para atendimento rápido.</p>
-          </article>
-          <article class="service-card">
-            <span>07</span>
-            <h3>Melhorias em sites existentes</h3>
-            <p>Ajustes visuais, responsividade, organização e experiência do usuário.</p>
-          </article>
-          <article class="service-card">
-            <span>08</span>
-            <h3>Interfaces para projetos acadêmicos</h3>
-            <p>Telas e páginas para apresentar trabalhos, protótipos e soluções.</p>
-          </article>
+        </div>
+      </section>
+
+      <section class="section section-observe resume-section" id="curriculo" aria-labelledby="curriculo-title">
+        <div class="resume-copy">
+          <p class="section-kicker">Currículo</p>
+          <h2 id="curriculo-title">Disponível para estágio, freelance e projetos web.</h2>
+          <p>
+            Formação em andamento na FACENS, experiência prática com loja e foco atual em
+            front-end, fundamentos de back-end, banco de dados e publicação de projetos.
+          </p>
+        </div>
+        <div class="resume-actions">
+          <a class="btn btn--primary" href="assets/curriculo-miqueias-masuete.pdf" download>Baixar currículo em PDF</a>
+          <a class="btn btn--secondary" href="https://github.com/0Robert010" target="_blank" rel="noopener noreferrer">Ver GitHub</a>
         </div>
       </section>
 
       <section class="contact section-observe" id="contato" aria-labelledby="contato-title">
         <div class="contact__content">
           <p class="section-kicker">Contato</p>
-          <h2 id="contato-title">Vamos tirar sua ideia do papel?</h2>
+          <h2 id="contato-title">Vamos conversar sobre seu projeto?</h2>
           <p>
-            Me chame para tirar uma ideia do papel, melhorar um site existente ou criar uma
-            presença digital do zero.
+            Me chame para criar um site, melhorar uma página existente, montar um catálogo ou
+            apresentar um projeto acadêmico com mais profissionalismo.
           </p>
 
-          <!-- Troque os links e o e-mail abaixo pelos seus contatos reais. -->
           <div class="contact-links" aria-label="Links de contato">
-            <a href="COLOCAR_LINK_WHATSAPP" target="_blank" rel="noreferrer">WhatsApp</a>
-            <a href="mailto:COLOCAR_EMAIL">E-mail</a>
-            <a href="COLOCAR_LINK_GITHUB" target="_blank" rel="noreferrer">GitHub</a>
-            <a href="COLOCAR_LINK_LINKEDIN" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="contact-link contact-link--primary" href="https://wa.me/5515991727075?text=Oi%20Miqueias%2C%20quero%20conversar%20sobre%20um%20projeto%20web." target="_blank" rel="noopener noreferrer">WhatsApp</a>
+            <a class="contact-link" href="mailto:miqueiasrobert@icloud.com">E-mail</a>
+            <a class="contact-link" href="https://github.com/0Robert010" target="_blank" rel="noopener noreferrer">GitHub</a>
           </div>
         </div>
 
-        <form class="contact-form" novalidate data-contact-form>
+        <form class="contact-form" action="mailto:miqueiasrobert@icloud.com" method="post" enctype="text/plain" novalidate data-contact-form>
           <label for="name">Nome</label>
           <input id="name" name="name" type="text" placeholder="Seu nome" autocomplete="name" required />
           <small data-error-for="name"></small>
 
           <label for="email">E-mail</label>
-          <input id="email" name="email" type="text" inputmode="email" placeholder="seu@email.com" autocomplete="email" required />
+          <input id="email" name="email" type="email" inputmode="email" placeholder="seu@email.com" autocomplete="email" required />
           <small data-error-for="email"></small>
 
           <label for="message">Mensagem</label>
-          <textarea id="message" name="message" rows="5" placeholder="Conte sobre sua ideia" required></textarea>
+          <textarea id="message" name="message" rows="5" placeholder="Conte sua ideia, prazo ou tipo de site" required></textarea>
           <small data-error-for="message"></small>
 
-          <button class="btn btn--primary" type="submit">Enviar mensagem</button>
+          <button class="btn btn--primary" type="submit">Quero conversar sobre um projeto</button>
           <p class="form-success" role="status" aria-live="polite" data-form-success></p>
         </form>
       </section>
     </main>
+
+    <a
+      class="floating-whatsapp"
+      href="https://wa.me/5515991727075?text=Oi%20Miqueias%2C%20vim%20pelo%20seu%20portf%C3%B3lio."
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Chamar Miqueias no WhatsApp"
+    >
+      WhatsApp
+    </a>
 
     <button class="back-to-top" type="button" aria-label="Voltar ao topo" data-back-to-top>
       ↑
     </button>
 
     <footer class="site-footer">
-      <p>© <span data-current-year></span> Miqueias Masuete. Desenvolvido com HTML, CSS e JavaScript.</p>
-      <a href="#inicio">Voltar ao início</a>
+      <div>
+        <a class="footer-brand" href="#inicio">Miqueias Masuete</a>
+        <p>Desenvolvendo soluções digitais com prática, estudo e visão de negócio.</p>
+        <p>Sorocaba/SP - Feito com HTML, CSS e JavaScript.</p>
+      </div>
+      <nav aria-label="Links do rodapé">
+        <a href="#projetos">Projetos</a>
+        <a href="#servicos">Serviços</a>
+        <a href="https://github.com/0Robert010" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="mailto:miqueiasrobert@icloud.com">E-mail</a>
+      </nav>
+      <p class="footer-year">© <span data-current-year></span></p>
     </footer>
 
     <script src="script.js"></script>
