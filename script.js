@@ -8,7 +8,7 @@ const contactForm = document.querySelector('[data-contact-form]');
 const successMessage = document.querySelector('[data-form-success]');
 const currentYear = document.querySelector('[data-current-year]');
 
-const contact = {
+const contact = window.MiqueiasProfile?.get() ?? {
   email: 'miqueiasrobert@icloud.com',
   whatsapp: '5515991727075',
 };

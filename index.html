@@ -9,7 +9,7 @@
       content="Portfólio de Miqueias Masuete, desenvolvedor web em formação e estudante de Engenharia de Computação na FACENS. Projetos web, sites profissionais, SmartWaste, ABATE IMOB e soluções para negócios locais."
     />
     <meta name="author" content="Miqueias Masuete" />
-    <meta name="theme-color" content="#f5f8f6" />
+    <meta name="theme-color" content="#070a12" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="pt_BR" />
     <meta property="og:title" content="Miqueias Masuete | Desenvolvedor Web em formação" />
@@ -36,7 +36,7 @@
     <header class="site-header" data-header>
       <a class="logo" href="#inicio" aria-label="Miqueias Masuete - início">
         <span class="logo__mark">MM</span>
-        <span>Miqueias Masuete</span>
+        <span data-profile="name">Miqueias Masuete</span>
       </a>
 
       <button
@@ -65,10 +65,10 @@
     <main id="conteudo">
       <section class="hero section-observe" id="inicio" aria-labelledby="hero-title">
         <div class="hero__content">
-          <p class="availability">Aberto a freelance e estágio</p>
-          <p class="section-kicker">Desenvolvedor Web em formação | Engenharia de Computação</p>
-          <h1 id="hero-title">Crio sites modernos para negócios e projetos profissionais.</h1>
-          <p class="hero__description">
+          <p class="availability" data-profile="availability">Aberto a freelance e estágio</p>
+          <p class="section-kicker" data-profile="role">Desenvolvedor Web em formação | Engenharia de Computação</p>
+          <h1 id="hero-title" data-profile="heroTitle">Crio sites modernos para negócios e projetos profissionais.</h1>
+          <p class="hero__description" data-profile="heroDescription">
             Transformo ideias em páginas funcionais, bonitas e publicáveis, incluindo portfólios,
             projetos acadêmicos, catálogos e sites para pequenos negócios.
           </p>
@@ -81,15 +81,15 @@
 
           <div class="hero__stats" aria-label="Resumo profissional">
             <article>
-              <strong>FACENS</strong>
-              <span>Engenharia de Computação</span>
+              <strong data-profile="educationLabel">FACENS</strong>
+              <span data-profile="educationText">Engenharia de Computação</span>
             </article>
             <article>
               <strong>Web + negócio</strong>
               <span>Sites para presença digital e vendas</span>
             </article>
             <article>
-              <strong>Sorocaba/SP</strong>
+              <strong data-profile="location">Sorocaba/SP</strong>
               <span>Projetos remotos, híbridos e presenciais</span>
             </article>
           </div>
@@ -104,8 +104,8 @@
           />
           <div>
             <p class="profile-label">Posicionamento</p>
-            <h2>Ideia no papel, site no ar.</h2>
-            <p>
+            <h2 data-profile="positionTitle">Ideia no papel, site no ar.</h2>
+            <p data-profile="positionText">
               Desenvolvo páginas claras, responsivas e publicadas com GitHub e Vercel, pensando
               na apresentação do negócio e na experiência de quem vai usar.
             </p>
@@ -122,9 +122,9 @@
         <div class="section-heading section-heading--split">
           <div>
             <p class="section-kicker">Sobre mim</p>
-            <h2 id="sobre-title">Estudo tecnologia com foco em aplicação real.</h2>
+            <h2 id="sobre-title" data-profile="aboutTitle">Estudo tecnologia com foco em aplicação real.</h2>
           </div>
-          <p>
+          <p data-profile="aboutSummary">
             Meu objetivo profissional é evoluir como desenvolvedor web/full stack, atuar em
             estágio, freelas e projetos para pequenos negócios, sempre com entrega publicada,
             organizada e fácil de entender.
@@ -134,7 +134,7 @@
         <div class="about-layout">
           <article class="about-panel">
             <h3>Atualmente</h3>
-            <ul class="check-list">
+            <ul class="check-list" data-profile-list="currentFocus">
               <li>Curso Engenharia de Computação na FACENS.</li>
               <li>Foco em front-end, lógica, banco de dados e fundamentos de back-end.</li>
               <li>Crio sites responsivos em HTML, CSS e JavaScript com deploy na Vercel.</li>
@@ -144,7 +144,7 @@
 
           <article class="about-panel about-panel--accent">
             <h3>Experiência prática</h3>
-            <p>
+            <p data-profile="practicalExperience">
               Minha rotina com loja, atendimento, organização de produtos e impressão 3D me dá
               visão de cliente. Isso ajuda a criar páginas que não ficam só bonitas: elas precisam
               explicar, vender, orientar e facilitar contato.
@@ -601,19 +601,21 @@
 
     <footer class="site-footer">
       <div>
-        <a class="footer-brand" href="#inicio">Miqueias Masuete</a>
+        <a class="footer-brand" href="#inicio" data-profile="name">Miqueias Masuete</a>
         <p>Desenvolvendo soluções digitais com prática, estudo e visão de negócio.</p>
-        <p>Sorocaba/SP - Feito com HTML, CSS e JavaScript.</p>
+        <p><span data-profile="location">Sorocaba/SP</span> - Feito com HTML, CSS e JavaScript.</p>
       </div>
       <nav aria-label="Links do rodapé">
         <a href="#projetos">Projetos</a>
         <a href="#servicos">Serviços</a>
         <a href="https://github.com/0Robert010" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a href="mailto:miqueiasrobert@icloud.com">E-mail</a>
+        <a href="admin.html" rel="nofollow">Área privada</a>
       </nav>
       <p class="footer-year">© <span data-current-year></span></p>
     </footer>
 
+    <script src="profile.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

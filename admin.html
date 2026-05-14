@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#070a12" />
+    <title>Área privada | Miqueias Masuete</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="admin-page">
+    <main class="admin-shell">
+      <section class="admin-login" data-admin-login>
+        <a class="back-link" href="index.html">Voltar ao portfólio</a>
+        <p class="section-kicker">Área privada</p>
+        <h1>Painel do Miqueias</h1>
+        <p>
+          Entre com seu PIN para editar as informações do “Sobre mim” e testar o texto direto
+          neste navegador.
+        </p>
+
+        <form class="admin-card" data-admin-auth>
+          <label for="admin-pin">PIN de acesso</label>
+          <input id="admin-pin" name="pin" type="password" inputmode="text" autocomplete="current-password" placeholder="Digite seu PIN" required />
+          <button class="btn btn--primary" type="submit">Entrar no painel</button>
+          <small class="admin-message" data-admin-auth-message></small>
+        </form>
+      </section>
+
+      <section class="admin-panel" data-admin-panel hidden>
+        <div class="admin-panel__header">
+          <div>
+            <a class="back-link" href="index.html">Voltar ao portfólio</a>
+            <p class="section-kicker">Editor local</p>
+            <h1>Atualizar informações</h1>
+            <p>
+              As mudanças ficam salvas neste navegador. Use “Exportar dados” para guardar ou
+              levar o conteúdo para uma versão pública do site.
+            </p>
+          </div>
+          <button class="btn btn--ghost" type="button" data-admin-lock>Sair</button>
+        </div>
+
+        <form class="admin-form" data-profile-form>
+          <div class="admin-form__grid">
+            <label>
+              Nome
+              <input name="name" type="text" required />
+            </label>
+            <label>
+              Disponibilidade
+              <input name="availability" type="text" required />
+            </label>
+            <label>
+              Formação / posição
+              <input name="role" type="text" required />
+            </label>
+            <label>
+              Localização
+              <input name="location" type="text" required />
+            </label>
+            <label>
+              E-mail
+              <input name="email" type="email" required />
+            </label>
+            <label>
+              WhatsApp com DDI
+              <input name="whatsapp" type="text" required />
+            </label>
+            <label class="admin-form__wide">
+              Link do GitHub
+              <input name="github" type="url" required />
+            </label>
+            <label class="admin-form__wide">
+              Título principal
+              <textarea name="heroTitle" rows="2" required></textarea>
+            </label>
+            <label class="admin-form__wide">
+              Texto principal
+              <textarea name="heroDescription" rows="3" required></textarea>
+            </label>
+            <label>
+              Bloco de posicionamento
+              <input name="positionTitle" type="text" required />
+            </label>
+            <label>
+              Instituição
+              <input name="educationLabel" type="text" required />
+            </label>
+            <label>
+              Texto da formação
+              <input name="educationText" type="text" required />
+            </label>
+            <label class="admin-form__wide">
+              Texto do posicionamento
+              <textarea name="positionText" rows="3" required></textarea>
+            </label>
+            <label class="admin-form__wide">
+              Título do Sobre mim
+              <input name="aboutTitle" type="text" required />
+            </label>
+            <label class="admin-form__wide">
+              Objetivo profissional
+              <textarea name="aboutSummary" rows="3" required></textarea>
+            </label>
+            <label class="admin-form__wide">
+              Atualmente estudando / fazendo
+              <textarea name="currentFocus" rows="5" required></textarea>
+              <small>Uma linha para cada item.</small>
+            </label>
+            <label class="admin-form__wide">
+              Experiência prática
+              <textarea name="practicalExperience" rows="4" required></textarea>
+            </label>
+          </div>
+
+          <div class="admin-actions">
+            <button class="btn btn--primary" type="submit">Salvar e aplicar</button>
+            <button class="btn btn--secondary" type="button" data-admin-export>Exportar dados</button>
+            <button class="btn btn--ghost" type="button" data-admin-reset>Restaurar padrão</button>
+          </div>
+          <p class="form-success" data-admin-save-message role="status" aria-live="polite"></p>
+        </form>
+
+        <article class="admin-export" data-admin-export-box hidden>
+          <h2>Dados exportados</h2>
+          <p>Guarde este conteúdo se quiser reaplicar depois ou transformar em arquivo fixo no projeto.</p>
+          <textarea readonly rows="12" data-admin-export-output></textarea>
+        </article>
+      </section>
+    </main>
+
+    <script src="profile.js"></script>
+    <script src="admin.js"></script>
+  </body>
+</html>
