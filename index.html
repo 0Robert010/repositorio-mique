@@ -45,21 +45,11 @@
     <header class="site-header" data-header>
       <a class="logo" href="#inicio" aria-label="Miqueias Masuete - início">
         <span class="logo__mark">MM</span>
-        <span data-profile="name">Miqueias Masuete</span>
+        <span class="logo__text">
+          <span data-profile="name">Miqueias Masuete</span>
+          <small>Web developer</small>
+        </span>
       </a>
-
-      <button
-        class="nav-toggle"
-        type="button"
-        aria-label="Abrir menu"
-        aria-controls="main-nav"
-        aria-expanded="false"
-        data-nav-toggle
-      >
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
 
       <nav class="main-nav" id="main-nav" aria-label="Navegação principal" data-nav>
         <a class="nav-link" href="#inicio">Início</a>
@@ -69,6 +59,34 @@
         <a class="nav-link" href="#servicos">Serviços</a>
         <a class="nav-link" href="#contato">Contato</a>
       </nav>
+
+      <div class="header-actions">
+        <a class="header-status" href="#contato">
+          <span aria-hidden="true"></span>
+          Aberto a freelas
+        </a>
+        <a
+          class="header-cta"
+          href="https://wa.me/5515991727075?text=Oi%20Miqueias%2C%20vim%20pelo%20seu%20portf%C3%B3lio%20e%20quero%20conversar."
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Vamos conversar
+          <span aria-hidden="true">↗</span>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Abrir menu"
+          aria-controls="main-nav"
+          aria-expanded="false"
+          data-nav-toggle
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </header>
 
     <main id="conteudo">
@@ -610,19 +628,65 @@
     </button>
 
     <footer class="site-footer">
-      <div>
-        <a class="footer-brand" href="#inicio" data-profile="name">Miqueias Masuete</a>
-        <p>Desenvolvendo soluções digitais com prática, estudo e visão de negócio.</p>
-        <p><span data-profile="location">Sorocaba/SP</span> - Feito com HTML, CSS e JavaScript.</p>
+      <div class="footer-cta">
+        <div>
+          <p class="footer-kicker">Vamos tirar sua ideia do papel?</p>
+          <h2>Site moderno, direto e pronto para publicar.</h2>
+          <p>
+            Me chame para criar uma landing page, catálogo, portfólio ou apresentação de projeto
+            acadêmico com visual profissional.
+          </p>
+        </div>
+        <div class="footer-cta__actions">
+          <a class="btn btn--primary" href="https://wa.me/5515991727075?text=Oi%20Miqueias%2C%20quero%20conversar%20sobre%20um%20site." target="_blank" rel="noopener noreferrer">Chamar no WhatsApp</a>
+          <a class="btn btn--secondary" href="#projetos">Ver projetos</a>
+        </div>
       </div>
-      <nav aria-label="Links do rodapé">
-        <a href="#projetos">Projetos</a>
-        <a href="#servicos">Serviços</a>
-        <a href="https://github.com/0Robert010" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="mailto:miqueiasrobert@icloud.com">E-mail</a>
+
+      <div class="footer-main">
+        <div class="footer-about">
+          <a class="footer-logo" href="#inicio" aria-label="Miqueias Masuete - início">
+            <span class="logo__mark">MM</span>
+            <span>
+              <strong data-profile="name">Miqueias Masuete</strong>
+              <small>Desenvolvedor Web em evolução</small>
+            </span>
+          </a>
+          <p>Desenvolvendo soluções digitais com prática, estudo e visão de negócio.</p>
+          <div class="footer-stack" aria-label="Tecnologias principais">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Vercel</span>
+          </div>
+        </div>
+
+        <nav class="footer-column" aria-labelledby="footer-nav-title">
+          <h3 id="footer-nav-title">Navegação</h3>
+          <a href="#sobre">Sobre</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#tecnologias">Tecnologias</a>
+          <a href="#servicos">Serviços</a>
+        </nav>
+
+        <div class="footer-column" aria-labelledby="footer-contact-title">
+          <h3 id="footer-contact-title">Contato</h3>
+          <a href="https://wa.me/5515991727075?text=Oi%20Miqueias%2C%20vim%20pelo%20seu%20portf%C3%B3lio." target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          <a href="mailto:miqueiasrobert@icloud.com">miqueiasrobert@icloud.com</a>
+          <a href="https://github.com/0Robert010" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+
+        <div class="footer-column footer-column--meta" aria-labelledby="footer-meta-title">
+          <h3 id="footer-meta-title">Disponibilidade</h3>
+          <p>Freelance, estágio e projetos web.</p>
+          <p><span data-profile="location">Sorocaba/SP</span> · remoto, híbrido ou presencial.</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span data-current-year></span> Miqueias Masuete. Feito com HTML, CSS e JavaScript.</p>
         <a href="admin.html" rel="nofollow">Área privada</a>
-      </nav>
-      <p class="footer-year">© <span data-current-year></span></p>
+      </div>
     </footer>
 
     <script src="profile.js"></script>
