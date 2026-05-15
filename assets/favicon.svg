@@ -1,5 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="MM">
-  <rect width="64" height="64" rx="12" fill="#12211f"/>
-  <path d="M14 46V18h8l10 15 10-15h8v28h-8V31L34 43h-4L22 31v15h-8Z" fill="#ffffff"/>
-  <path d="M12 54h40" stroke="#0f7c64" stroke-width="4" stroke-linecap="round"/>
+  <defs>
+    <linearGradient id="g" x1="8" y1="10" x2="58" y2="54" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1467ff"/>
+      <stop offset="0.55" stop-color="#149dff"/>
+      <stop offset="1" stop-color="#18f7e4"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#070a12"/>
+  <path d="M10 50V14l22 21 22-21v36h-8V31L32 45 18 31v19h-8Z" fill="none" stroke="url(#g)" stroke-width="4.8" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M22 50V34l10 10 10-10v16" fill="none" stroke="url(#g)" stroke-width="4.8" stroke-linejoin="round" stroke-linecap="round"/>
 </svg>

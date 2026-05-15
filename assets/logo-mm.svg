@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 170" role="img" aria-labelledby="logo-title">
+  <title id="logo-title">Logo MM Miqueias Masuete</title>
+  <defs>
+    <linearGradient id="mm-gradient" x1="28" y1="26" x2="270" y2="144" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1467ff"/>
+      <stop offset="0.52" stop-color="#149dff"/>
+      <stop offset="1" stop-color="#18f7e4"/>
+    </linearGradient>
+    <filter id="mm-glow" x="-20%" y="-30%" width="140%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.05 0 0 0 0 0.6 0 0 0 0 1 0 0 0 0.55 0"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g fill="none" stroke="url(#mm-gradient)" stroke-width="12" stroke-linejoin="round" stroke-linecap="round" filter="url(#mm-glow)">
+    <path d="M34 142V30l117 103 117-103v112h-27V75l-90 80-90-80v67H34Z"/>
+    <path d="M79 142V82l72 64 72-64v60"/>
+    <path d="M121 124l30-27 30 27"/>
+    <path d="M223 82l45-52"/>
+  </g>
+</svg>
